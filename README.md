@@ -41,6 +41,19 @@ This template ships with the main React and Storybook configuration files you'll
 
     Run `yarn storybook` to see your component's stories at `http://localhost:6006`
 
+## Automate Tests with Storybook's Test Runner
+
+Storybook's **play function** helps automate UI interactions, but the tests only run when viewing a story. To automate this, Storybook's **test runner**, powered by Playwright, can run all interaction tests and catch broken stories.
+
+### Install the test runner:
+```bash
+yarn add --dev @storybook/test-runner
+```
+### Run the tests automatically:
+```bash
+yarn test-storybook --watch
+```
+
 ## 🔎 What's inside?
 
 A quick look at the top-level files and directories included with this template.
